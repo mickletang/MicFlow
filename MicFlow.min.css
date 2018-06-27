@@ -1,0 +1,713 @@
+.MicFlow,.MicFlow *,.MicFlowWork text {
+	font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Hiragino Sans GB,WenQuanYi Micro Hei,Arial,sans-serif
+}
+
+.MicFlow i,.MicFlowHead label {
+	text-align: center;
+	display: block
+}
+
+v\:group,v\:imagedata,v\:line,v\:oval,v\:polyline,v\:rect,v\:stroke,v\:textbox {
+	display: inline-block;
+	background: 0 0
+}
+
+::-ms-clear,::-ms-reveal {
+	display: none
+}
+
+.MicFlow {
+	background: #f1f1f1;
+	border: 1px solid #ddd;
+	position: relative;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	color: #333
+}
+
+.MicFlow,.MicFlow * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 1.42857143
+}
+
+.MicFlow :after,.MicFlow :before,.MicFlow:after,.MicFlow:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.MicFlow i {
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+	font-size: 18px;
+	margin: 0 auto;
+	filter: Alpha(Opacity=70);
+	-moz-opacity: .7;
+	opacity: .7;
+	text-shadow: .5px 0 #fff,0 .5px #fff;
+	line-height: 1
+}
+
+.MicFlow a.a_disabled,.MicFlow a.a_disabled:hover {
+	border: 0!important;
+	padding: 4px 6px;
+	background: 0 0!important;
+	cursor: not-allowed!important
+}
+
+.MicFlowHeadBtn,.MicFlow_tool_btn {
+	cursor: pointer;
+	outline: 0;
+	blr: expression(this.onFocus=this.blur());
+	text-decoration: none
+}
+
+.MicFlow a.a_disabled i:before {
+	color: #ccc!important
+}
+
+.MicFlowWork {
+	position: absolute;
+	overflow: auto;
+	background-color: #fff
+}
+
+.MicFlowWork .MicFlowWorkInner {
+	position: relative;
+	overflow: hidden;
+	background-image: url(data:image/gif;base64,R0lGODlhDAAMAJEAAOrq6v////Hx8QAAACH5BAAHAP8ALAAAAAAMAAwAAAIWjI8hycvonomSPtvkwYlDPQniSApAAQA7);outline: 0
+}
+
+.MicFlowWork text {
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.42857143
+}
+
+.MicFlowHead {
+	clear: both;
+	height: 28px;
+	border-bottom: #1d8ce0 2px solid;
+	margin-left: -1px
+}
+
+.MicFlowHead label {
+	font-weight: 700;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 27px;
+	padding: 3px;
+	width: 176px;
+	background: #1d8ce0;
+	float: left;
+	color: #fff;
+	border-radius: 3px 0 0;
+	overflow: hidden;
+	margin: -1px 4px 0 0
+}
+
+.MicFlowHeadBtn {
+	display: block;
+	border: 0;
+	height: 26px;
+	width: 30px;
+	padding: 4px 6px;
+	margin: 0 2px;
+	float: left;
+	color: #777;
+}
+
+.MicFlowHeadBtn i {
+	display: inline-block;
+	overflow: hidden;
+	width: 18px;
+	height: 18px;
+	border: 0;
+	font-size: 16px;
+	line-height: 18px
+}
+
+.MicFlowHeadBtn:hover {
+	background: #fff;
+	padding: 4px 5px;
+	border-left: #ddd 1px solid;
+	border-right: #ddd 1px solid
+}
+
+.MicFlow_tool {
+	float: left;
+	clear: left;
+	border-right: #ddd 1px solid;
+	margin-left: -1px
+}
+
+.MicFlow_tool_div {
+	width: 34px;
+	padding: 4px 0;
+	overflow: hidden;
+	margin-right: -1px
+}
+
+.MicFlow_tool span {
+	height: 0;
+	overflow: hidden;
+	border-top: #ddd 1px solid;
+	border-bottom: #fff 1px solid;
+	margin: 0 2px;
+	clear: both;
+	display: block
+}
+
+.MicFlow_tool_btn {
+	display: block;
+	border: 0;
+	height: 34px;
+	width: 34px;
+	padding: 8px;
+	color: #777
+}
+
+.MicFlow_tool_btn i {
+	display: block;
+	overflow: hidden;
+	width: 18px;
+	height: 18px;
+	border: 0
+}
+
+.MicFlow_tool_btn:hover {
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 7px
+}
+
+.MicFlow_tool_btndown {
+	cursor: default;
+	outline: 0;
+	blr: expression(this.onFocus=this.blur());
+	height: 34px;
+	width: 36px;
+	margin: 0 -1px;
+	padding: 8px 9px;
+	background: #00B4E1;
+	display: block;
+	text-decoration: none;
+	filter: Alpha(Opacity=70);
+	-moz-opacity: .7;
+	opacity: .7
+}
+
+.MicFlow_tool_btndown i {
+	display: block;
+	overflow: hidden;
+	width: 18px;
+	height: 18px;
+	color: #000;
+	filter: Alpha(Opacity=37);
+	-moz-opacity: .37;
+	opacity: .37;
+	position: relative
+}
+
+.MicFlow_extend_right {
+	position: absolute;
+	z-index: 10002;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 14px;
+	cursor: e-resize;
+	filter: Alpha(Opacity=20);
+	-moz-opacity: .2;
+	opacity: .2
+}
+
+.MicFlow_extend_bottom {
+	position: absolute;
+	z-index: 10002;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 14px;
+	cursor: s-resize;
+	filter: Alpha(Opacity=20);
+	-moz-opacity: .2;
+	opacity: .2
+}
+
+.MicFlow_area,.MicFlow_area .lock {
+	cursor: default
+}
+
+.MicFlow_extend_bottom:hover,.MicFlow_extend_right:hover {
+	background-color: #999;
+	border: 1px solid #fff
+}
+
+.MicFlowWork_group {
+	cursor: default;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0
+}
+
+.MicFlow_area {
+	position: absolute;
+	overflow: hidden
+}
+
+.MicFlow_area .bg {
+	cursor: move;
+	filter: Alpha(Opacity=30);
+	-moz-opacity: .3;
+	opacity: .3
+}
+
+.MicFlow_area.lock .bg {
+	cursor: default
+}
+
+.MicFlow_area label {
+	cursor: text;
+	top: 0;
+	left: 23px;
+	position: absolute;
+	display: block
+}
+
+.MicFlow_area.lock label {
+	cursor: default
+}
+
+.MicFlow_area i {
+	top: 2px;
+	left: 2px;
+	width: 18px;
+	height: 20px;
+	position: absolute;
+	cursor: pointer
+}
+
+.MicFlow_area i:before {
+	content: "\e6bd"
+}
+
+.MicFlow_area.area_red .bg {
+	border: 1px solid red;
+	background-color: #FF7865
+}
+
+.MicFlow_area.area_red i,.MicFlow_area.area_red label {
+	color: red
+}
+
+.MicFlow_area.area_yellow .bg {
+	border: 1px solid #CD925A;
+	background-color: #FFD564
+}
+
+.MicFlow_area.area_yellow i,.MicFlow_area.area_yellow label {
+	color: #FFBA1D
+}
+
+.MicFlow_area.area_blue .bg {
+	border: 1px solid #347BB1;
+	background-color: #549CDE
+}
+
+.MicFlow_area.area_blue i,.MicFlow_area.area_blue label {
+	color: #347BB1
+}
+
+.MicFlow_area.area_green .bg {
+	border: 1px solid green;
+	background-color: #84CA04
+}
+
+.MicFlow_area.area_green i,.MicFlow_area.area_green label {
+	color: green
+}
+
+.MicFlow_area.area_milk .bg {
+	border: 1px solid #333;
+	background-color: #fff;
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5;
+	opacity: .5
+}
+
+.MicFlow_area.area_milk i,.MicFlow_area.area_milk label {
+	color: #777
+}
+
+.MicFlowWork svg {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.MicFlowWork v\:group {
+	position: relative;
+	display: block
+}
+
+.MicFlowWork v\:group v\:line,.MicFlowWork v\:group v\:polyline {
+	overflow: visible
+}
+
+.MicFlowWork v\:group div {
+	cursor: text;
+	position: absolute;
+	overflow: visible;
+	display: inline;
+	float: left;
+	white-space: nowrap
+}
+
+.MicFlowWork .draw {
+	color: #f80
+}
+
+.MicFlow_item {
+	position: absolute;
+	border: 1px solid #A1DCEB;
+	border-radius: 3px;
+	background-color: #C1DCFC;
+	box-shadow: 1px 1px 2px rgba(99,99,99,2)
+}
+
+.MicFlow table {
+	margin: 0;
+	padding: 0 1px;
+	border-radius: 2px
+}
+
+.MicFlow td,.MicFlow td div {
+	vertical-align: middle;
+	text-align: center;
+	padding: 0;
+	cursor: default;
+	word-wrap: break-word;
+	word-break: break-all
+}
+
+.MicFlow .ico {
+	width: 18px;
+	cursor: move;
+	text-align: center;
+	vertical-align: middle
+}
+
+.MicFlow .item_rhomb .span,.MicFlow .item_round .span {
+	display: block;
+	text-align: center;
+	overflow: visible;
+	padding: 0;
+	cursor: default;
+	word-wrap: break-word;
+	word-break: break-all;
+	position: absolute
+}
+
+.MicFlow .ico i {
+	filter: Alpha(Opacity=30);
+	-moz-opacity: .3;
+	opacity: .3;
+	color: #000;
+	margin: 0 auto
+}
+
+.MicFlow .item_round {
+	border-radius: 50%;
+	overflow: visible
+}
+
+.MicFlow .item_round table {
+	border: 0;
+	padding: 0;
+	width: 24px;
+	height: 24px
+}
+
+.MicFlow .item_round .span {
+	top: 100%;
+	left: -110%;
+	width: 330%
+}
+
+.MicFlow .item_mix {
+	background: #B6F700;
+	color: #fff
+}
+
+.MicFlow .item_capsule {
+	border-radius: 13px
+}
+
+.MicFlow .item_ellipse {
+	border-radius: 50%
+}
+
+.MicFlow .item_rhomb {
+	transform: rotate(45deg)
+}
+
+.MicFlow .item_rhomb table {
+	border: 0;
+	padding: 0;
+	transform: rotate(-45deg);
+	width: 28px;
+	height: 28px
+}
+
+.MicFlow .item_rhomb>div .rs_close {
+	transform: rotate(-45deg);
+	top: -50%;
+	left: 50%;
+	margin-left: -3px
+}
+
+.MicFlow .item_rhomb .span {
+	top: 70%;
+	left: -60%;
+	width: 350%;
+	transform: rotate(-45deg)
+}
+
+.MicFlow .item_focus {
+	border: 1px solid #3892D3!important;
+	z-index: 5
+}
+
+.MicFlow .item_focus table {
+	margin: 0!important
+}
+
+.MicFlow .item_mark {
+	border: 2px solid #FF0000;
+	margin: -1px
+}
+
+.MicFlow .item_mark table {
+	margin: -1px
+}
+
+.MicFlow .item_mark td {
+	cursor: crosshair
+}
+
+.MicFlow .item_mark.item_round .span {
+	margin-top: 1px
+}
+
+.MicFlow .item_mark.item_rhomb .span {
+	margin-top: 1px;
+	margin-left: 1px
+}
+
+.MicFlow textarea {
+	position: absolute;
+	border: 1px solid #3892D3;
+	display: none;
+	overflow-y: visible;
+	width: 100px;
+	z-index: 10001
+}
+
+.MicFlow div .rs_right {
+	overflow: hidden;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	height: 100%;
+	width: 6px;
+	cursor: w-resize
+}
+
+.MicFlow div .rs_bottom {
+	overflow: hidden;
+	position: absolute;
+	left: -1px;
+	bottom: -1px;
+	width: 100%;
+	height: 6px;
+	cursor: n-resize
+}
+
+.MicFlow div .rs_close,.MicFlow div .rs_rb {
+	position: absolute;
+	right: -1px;
+	width: 10px;
+	height: 9px;
+	filter: Alpha(Opacity=70);
+	font-size: 12px;
+	color: #475669;
+	line-height: 1;
+	overflow: hidden;
+	font-family: iconflow!important
+}
+
+.MicFlow div .rs_rb {
+	bottom: 0;
+	-moz-opacity: .7;
+	opacity: .7;
+	cursor: pointer;
+	cursor: nw-resize
+}
+
+.MicFlow div .rs_rb:before {
+	content: "\e6b7"
+}
+
+.MicFlow div .rs_close {
+	top: 1px;
+	-moz-opacity: .7;
+	opacity: .7;
+	cursor: pointer
+}
+
+.MicFlow .MicFlow_line_oper,.MicFlow .rs_ghost {
+	background: #E5E9F2;
+	position: absolute;
+	filter: Alpha(Opacity=50)
+}
+
+.MicFlow .rs_ghost {
+	display: none;
+	overflow: hidden;
+	border: 1px dashed #8492A6;
+	-moz-opacity: .5;
+	opacity: .5;
+	z-index: 10
+}
+
+.MicFlow .MicFlow_line_oper {
+	width: 82px;
+	height: 20px;
+	border: 1px solid #8492A6;
+	-moz-opacity: .5;
+	opacity: .5;
+	z-index: 10000
+}
+
+.MicFlow .MicFlow_line_mp,.MicFlow_linemove {
+	overflow: hidden;
+	position: absolute;
+	z-index: 9999
+}
+
+.MicFlow .MicFlow_line_mp {
+	width: 9px;
+	height: 9px;
+	filter: Alpha(Opacity=40);
+	-moz-opacity: .4;
+	opacity: .4;
+	background: #333;
+	cursor: crosshair
+}
+
+.MicFlow_linemove {
+	background-color: transparent;
+	filter: Alpha(Opacity=50);
+	-moz-opacity: .5;
+	opacity: .5
+}
+
+.MicFlow_line_oper i {
+	display: inline-block;
+	margin-left: 2px;
+	cursor: pointer;
+	position: relative
+}
+
+.MicFlowItem {
+	position: absolute;
+}
+
+.MicFlowItem .icospan{
+	float:left;
+	text-align: center;
+}
+
+.ItemRound{
+	float: left;
+	width: 100px;
+}
+
+.MicFlowItem span{
+	height:33px;
+	line-height: 30px;
+	width: 120px;
+	display: block;
+	color: #4cb0f9;
+	border: 1px solid #4cb0f9;
+	border-radius: 10px;
+	font-size: 14px;
+	float: none;
+	padding-left: 0;
+	background: none;
+	background-color: #fff;
+}
+
+.MicFlow .item_path span{
+	border: 1px solid #FF0000;
+	color: #FF0000;
+}
+
+.tempDiv{
+	border:1px dashed blue;
+	background:#5a72f8;
+	position:absolute;
+	width:0;
+	height:0;
+	filter:alpha(opacity:10);
+	opacity:0.1
+}
+
+@font-face {font-family: "iconflow";
+  src: url('fonts/iconflow.eot?t=123'); /* IE9*/
+  src: url('fonts/iconflow.eot?t=123#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('fonts/iconflow.woff?t=123') format('woff'), /* chrome, firefox */
+  url('fonts/iconflow.ttf?t=123') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('fonts/iconflow.svg?t=123#iconflow') format('svg'); /* iOS 4.1- */
+}
+
+.MicFlowHeadBtn i{
+  font-family:"iconflow" !important;
+  font-size:18px;line-height:20px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.MicFlow .ico_open:before{ content:"\e7a0";color:#FFD300 }
+.MicFlow .ico_new:before{ content:"\e659"; }
+.MicFlow .ico_reload:before{ content:"\e607";color:#669900 }
+.MicFlow .ico_save:before{ content:"\e63d";color:#0099cc }
+.MicFlow .ico_undo:before{ content:"\e673";color:#ff8800 }
+.MicFlow .ico_redo:before{ content:"\e672";color:#ff8800 }
+.MicFlow .ico_print:before{ content:"\e671"; }
+
+.MicFlow .ico_cursor:before{ content:"\e602"; }
+.MicFlow .ico_start:before{ content:"\e700"; }
+.MicFlow .ico_end:before{ content:"\e609"; }
+.MicFlow .ico_fork:before{ content:"\e60c"; }
+.MicFlow .ico_join:before{ content:"\e606"; }
+.MicFlow .ico_direct:before{ content:"\e605"; }
+.MicFlow .ico_dashed:before{ content:"\e675"; }
+.MicFlow .ico_group:before{ content:"\e663"; }
+.MicFlow .ico_complex:before{ content:"\e872"; }
+.MicFlow .ico_node:before{ content:"\e678"; }
+.MicFlow .ico_task:before{ content:"\e6af"; }
+.MicFlow .ico_chat:before{ content:"\e61b"; }
+.MicFlow .ico_state:before{ content:"\e633"; }
+.MicFlow .ico_plug:before{ content:"\e66c"; }
+.MicFlow .ico_menu:before{ content:"\e649"; }
+.MicFlow .ico_sound:before{ content:"\e62b"; }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>流程图DEMO</title>
+    <link rel="stylesheet" type="text/css" href="./MicFlow.min.css"/>
+</head>
+<body>
+<div id="demo" style="width:800px;height:540px;"></div>
+
+<br><br><br>
+<input id="submit" type="button" value='导出结果' onclick="Export()"/>
+<textarea id="result" row="6"></textarea>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="./MicFlow.min.js"></script>
+<script type="text/javascript">
+	var property={
+		headBtnsList:["save","reload","undo","redo","cursor","direct","dashed","node","chat","fork","join"],
+		lang:"cn"
+	};
+
+	var jsondata = {"nodes":{"1529895084857":{"name":"提出交接","left":180,"top":30,"type":"task","width":104,"height":26,"paths":true,"alt":true},"1529895098875":{"name":"主管预审核","left":180,"top":93,"type":"task","width":104,"height":26,"paths":true,"alt":true},"1529895123618":{"name":"工作交接","left":179,"top":154,"type":"task","width":104,"height":26,"marked":true,"alt":true},"1529895141002":{"name":"部门主管","left":181,"top":219,"type":"task","width":104,"height":28,"alt":true},"1529895170625":{"name":"部门总监","left":180,"top":281,"type":"task","width":104,"height":26,"alt":true},"1529895202769":{"name":"通知","left":179,"top":357,"type":"task","width":104,"height":26,"alt":true},"1529895225376":{"name":"项目部","left":373,"top":95,"type":"node","width":104,"height":26,"paths":true,"alt":true},"1529895237385":{"name":"研发经理","left":373,"top":156,"type":"node","width":104,"height":26,"paths":true,"alt":true},"1529895264128":{"name":"项目部经理","left":373,"top":217,"type":"node","width":104,"height":26,"paths":true,"alt":true},"1529895280208":{"name":"一级经理","left":372,"top":279,"type":"task","width":104,"height":26,"alt":true}},"lines":{"1529895302952":{"from":"1529895084857","to":"1529895098875","name":"","type":"sl","dash":false,"alt":true},"1529895306152":{"from":"1529895098875","to":"1529895123618","name":"","type":"sl","dash":false,"marked":true,"alt":true},"1529895308208":{"from":"1529895123618","to":"1529895141002","name":"","type":"sl","dash":false,"alt":true},"1529895311320":{"from":"1529895141002","to":"1529895170625","name":"","type":"sl","dash":false,"alt":true},"1529895313367":{"from":"1529895170625","to":"1529895202769","name":"","type":"sl","dash":false,"alt":true},"1529895318456":{"from":"1529895084857","to":"1529895225376","name":"","type":"tb","dash":false,"alt":true,"marked":true,"cp":69.5},"1529895331264":{"from":"1529895225376","to":"1529895237385","name":"","type":"sl","dash":false,"marked":true,"alt":true},"1529895332544":{"from":"1529895237385","to":"1529895264128","name":"","type":"sl","dash":false,"marked":true,"alt":true},"1529895344831":{"from":"1529895264128","to":"1529895098875","name":"","type":"lr","dash":false,"alt":true,"marked":true,"cp":328.5},"1529895357056":{"from":"1529895225376","to":"1529895084857","name":"","type":"lr","dash":false,"alt":true,"cp":497.5},"1529895373679":{"from":"1529895237385","to":"1529895084857","name":"","type":"lr","dash":false,"alt":true,"cp":521.5},"1529895375807":{"from":"1529895264128","to":"1529895084857","name":"","type":"lr","dash":false,"alt":true,"cp":546.5},"1529895403991":{"from":"1529895280208","to":"1529895084857","name":"","type":"lr","dash":false,"alt":true,"cp":572.5},"1529895438262":{"from":"1529895170625","to":"1529895280208","name":"","type":"sl","dash":false,"alt":true},"1529895443910":{"from":"1529895098875","to":"1529895084857","name":"","type":"lr","dash":false,"alt":true,"cp":154},"1529895455775":{"from":"1529895123618","to":"1529895084857","name":"","type":"lr","dash":false,"alt":true,"cp":129},"1529895465342":{"from":"1529895141002","to":"1529895084857","name":"","type":"lr","dash":false,"alt":true,"cp":101.5},"1529895475022":{"from":"1529895170625","to":"1529895084857","name":"","type":"lr","dash":false,"alt":true,"cp":70},"1529895485454":{"from":"1529895280208","to":"1529895202769","name":"","type":"lr","dash":false,"alt":true,"cp":428}}};
+
+	var flow;
+    $(function(){
+		flow = MicFlow.init("#demo", property);
+		flow.setData(jsondata);
+    });
+
+	function Export(){
+		document.getElementById("result").value=JSON.stringify(flow.exportData());
+	}
+
+</script>
+</body>
+</html>
